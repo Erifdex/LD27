@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="LD27" package="net.erifdex.ld27" version="1.0.0" company="Erifdex" />
+	<app main="Main" path="bin" file="LD27" />
+	
+	<source path="src" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="ash" />
+	
+	<assets path="assets" rename="assets" exclude="openfl.svg" />
+	<icon path="assets/openfl.svg" />
+	
+</project>
