@@ -1,20 +1,18 @@
-package ;
+import com.haxepunk.Engine;
+import com.haxepunk.HXP;
+import net.erifdex.ld27.scenes.GameScene;
 
-import flash.display.Sprite;
-import flash.events.Event;
-import net.erifdex.ld27.Game;
+class Main extends Engine
+{
 
-class Main extends Sprite {
-	
-	public function new () {
-		super();
-		addEventListener(Event.ENTER_FRAME, onEnterFrame);
+	override public function init()
+	{
+#if debug
+		HXP.console.enable();
+#end
+		HXP.scene = new GameScene();
 	}
 
-	private function onEnterFrame(event : Event) : Void {
-		removeEventListener(Event.ENTER_FRAME, onEnterFrame);
-		var game = new Game();
-		addChild(game);
-	}
-	
+	public static function main() { new Main(); }
+
 }
