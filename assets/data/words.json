@@ -1,0 +1,227 @@
+{
+	"types": [
+		{
+			"matches": [1, 2]
+		},
+		{
+			"matches": [4, 1, 3]
+		},
+		{
+			"matches": [5, 4, 2, 1, 6]
+		},
+		{
+			"matches": [5, 6, 1]
+		},
+		{
+			"matches": [3, 6, 5]
+		},
+		{
+			"matches": [4]
+		},
+		{
+			"matches": [4]
+		}
+	],
+	"words": [
+		{ 
+			"text": "OK,",
+			"type":0,
+			"rating":0.5
+		},
+		{ 
+			"text": "Right,",
+			"type":0,
+			"rating":0.4
+		},
+		{ 
+			"text": "Listen up,",
+			"type":0,
+			"rating":0.55
+		},
+		{ 
+			"text": "Good evening,",
+			"type":0,
+			"rating":0.3
+		},
+		{ 
+			"text": "Hello,",
+			"type":0,
+			"rating":0.4
+		},
+		{ 
+			"text": "lads",
+			"type":1,
+			"rating":0.6
+		},
+		{ 
+			"text": "team",
+			"type":1,
+			"rating":0.5
+		},
+		{ 
+			"text": "guys",
+			"type":1,
+			"rating":0.3
+		},
+		{ 
+			"text": "fellas",
+			"type":1,
+			"rating":0.6
+		},
+		{ 
+			"text": "chaps",
+			"type":1,
+			"rating":0.8
+		},
+		{ 
+			"text": "maggots",
+			"type":1,
+			"rating":0.3
+		},
+		{ 
+			"text": "big",
+			"type":2,
+			"rating":0.5
+		},
+		{ 
+			"text": "small",
+			"type":2,
+			"rating":0.4
+		},
+		{ 
+			"text": "incredible",
+			"type":2,
+			"rating":0.6
+		},
+		{ 
+			"text": "great",
+			"type":2,
+			"rating":0.55
+		},
+		{ 
+			"text": "big",
+			"type":2,
+			"rating":0.4
+		},
+		{ 
+			"text": "good",
+			"type":2,
+			"rating":0.4
+		},
+		{ 
+			"text": "major",
+			"type":2,
+			"rating":0.6
+		},
+		{ 
+			"text": "happy",
+			"type":2,
+			"rating":0.7
+		},
+		{ 
+			"text": "win",
+			"type":3,
+			"rating":0.8
+		},
+		{ 
+			"text": "eat",
+			"type":3,
+			"rating":0.3
+		},
+		{ 
+			"text": "lose",
+			"type":3,
+			"rating":0.5
+		},
+		{ 
+			"text": "score",
+			"type":3,
+			"rating":0.3
+		},
+		{ 
+			"text": "win",
+			"type":3,
+			"rating":0.8
+		},
+		{ 
+			"text": "...",
+			"type":4,
+			"rating":0.5
+		},
+		{ 
+			"text": "- er -",
+			"type":4,
+			"rating":0.2
+		},
+		{ 
+			"text": "- um -",
+			"type":4,
+			"rating":0.2
+		},
+		{ 
+			"text": "- ah -",
+			"type":4,
+			"rating":0.2
+		},
+		{ 
+			"text": "",
+			"type":5,
+			"rating":0.5
+		},
+		{ 
+			"text": "game",
+			"type":5,
+			"rating":0.5
+		},
+		{ 
+			"text": "ball",
+			"type":5,
+			"rating":0.5
+		},
+		{ 
+			"text": "sport",
+			"type":5,
+			"rating":0.5
+		},
+		{ 
+			"text": "pitch",
+			"type":5,
+			"rating":0.5
+		},
+		{ 
+			"text": "potato",
+			"type":5,
+			"rating":1.0
+		},
+		{ 
+			"text": "England",
+			"type":6,
+			"rating":0.5
+		},
+		{ 
+			"text": "America",
+			"type":6,
+			"rating":0.5
+		},
+		{ 
+			"text": "Europe",
+			"type":6,
+			"rating":0.5
+		},
+		{ 
+			"text": "Earth",
+			"type":6,
+			"rating":0.5
+		},
+		{ 
+			"text": "Antarctica",
+			"type":6,
+			"rating":0.5
+		},
+		{ 
+			"text": "Pluto",
+			"type":6,
+			"rating":0.5
+		}
+	]
+}

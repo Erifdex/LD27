@@ -1,0 +1,15 @@
+I guess this game is technically "moddable", as the words/phrases that can be said can be specified in one file - words.json.
+
+Each word in the file has a "rating", that determines how popular the word will be with the team. This is a floating-point number between 0 and 1, with 1 being the most effective
+
+Each word also has a specific integer "type", that determines when it is meant to be said in-game. These are the types, but theoretically, more can be defined.
+
+0 - Intro (e.g. "Right,", "Hello,")
+1 - Adressing noun (e.g. "lads", "team")
+2 - Adjective (e.g. "blue", "great")
+3 - Instruction (e.g. "win", "eat")
+4 - Break (e.g. "...")
+5 - Noun (e.g. "dog", "ball")
+6 - Place (e.g. "England")
+
+Each type also specifies the type of words that will go well after it.
