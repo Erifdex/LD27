@@ -4,11 +4,12 @@ import flash.display.Sprite;
 import flash.events.Event;
 import ash.core.Engine;
 import ash.tick.FrameTickProvider;
+import net.erifdex.ld27.states.MenuState;
 
 class Game extends Sprite {
 
 	public var engine 		: Engine;
-	public var factory 		: EntityFactory;
+	public var stateManager	: StateManager;
 	public var tickProvider	: FrameTickProvider;
 
 	public function new() {
@@ -24,9 +25,9 @@ class Game extends Sprite {
 
 	public function prepare() : Void {
 		engine = new Engine();
-		factory = new EntityFactory(engine);
+		stateManager = new StateManager(engine);
 
-		// add systems
+		stateManager.switchState(new MenuState());
 	}
 
 	public function begin() : Void {
