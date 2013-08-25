@@ -1,8 +1,10 @@
 LD27
 ====
 
-My (forthcoming) entry for Ludum Dare 27, (to be) built with Haxe
+My entry for Ludum Dare 27, built with Haxe
 
-Libraries (that will probably be) used:
+Libraries used:
 - OpenFL
-- Ash-Haxe
+- HaxePunk
+- Actuate
+

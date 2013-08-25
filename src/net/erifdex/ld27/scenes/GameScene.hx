@@ -66,11 +66,11 @@ class GameScene extends OverlayScene {
 			Sound.playDrum();
 			fadeSpeed = 0.5;
 			var score = calculateScore();
-			var messages = ["Your team heads out onto the field\nto play the cup final...", "Was your speech good enough to win the cup?"];
+			var messages = ["After hearing the words from their coach,\nyour team steps out onto the field\nto play the cup final...", "Was your speech good enough to win the cup?"];
 			if(score > 0.75) {
-				fadeOut(new CutsceneScene(2, messages, new MenuScene()));
+				fadeOut(new CutsceneScene(2, messages, new Yay()));
 			} else {
-				fadeOut(new CutsceneScene(2, messages, new MenuScene()));
+				fadeOut(new CutsceneScene(2, messages, new Nay()));
 			}
 			Sound.playBeat();
 		});

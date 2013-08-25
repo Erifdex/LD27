@@ -24,7 +24,10 @@ class Manager extends Entity {
 		face.scale = 2;
 		face.add("normal", [0]);
 		face.add("talk", [0, 1], 5, true);
-		face.add("smile", [1]);
+		if(!fire) {
+			face.add("smile", [2]);
+			face.add("cry", [3]);
+		}
 		face.play("normal");
 		this.graphic = face;
 		face.centerOrigin();
@@ -54,6 +57,10 @@ class Manager extends Entity {
 
 	public function smile() : Void {
 		face.play("smile");
+	}
+
+	public function cry() : Void {
+		face.play("cry");
 	}
 
 }
