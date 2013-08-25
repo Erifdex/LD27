@@ -11,6 +11,7 @@ class GFX {
 	public static var OVERLAY : BitmapData;
 	public static var PLAYER : BitmapData;
 	public static var SHADOW : BitmapData;
+	public static var SPEECH : BitmapData;
 
 	public static function init() : Void {
 		GFX.BUTTON = Assets.getBitmapData("gfx/button.png");
@@ -20,5 +21,6 @@ class GFX {
 		GFX.OVERLAY = Assets.getBitmapData("gfx/overlay.png");
 		GFX.PLAYER = Assets.getBitmapData("gfx/player.png");
 		GFX.SHADOW = Assets.getBitmapData("gfx/shadow.png");
+		GFX.SPEECH = Assets.getBitmapData("gfx/speech.png");
 	}
 }

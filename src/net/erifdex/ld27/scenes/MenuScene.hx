@@ -11,11 +11,13 @@ import motion.easing.Linear;
 import net.erifdex.ld27.entities.Button;
 import net.erifdex.ld27.entities.Manager;
 import net.erifdex.ld27.other.GFX;
+import net.erifdex.ld27.other.Sound;
 
 class MenuScene extends OverlayScene {
 
 	public var ball1 : Image;
 	public var ball2 : Image;
+	public var playing : Bool;
 
 	public function new() {
 		super();
@@ -47,7 +49,11 @@ class MenuScene extends OverlayScene {
 	}
 
 	public function playPressed() : Void {
-		fadeOut(new GameScene());
+		if(!playing) {
+			playing = true;
+			Sound.playBeat();
+			fadeOut(new CutsceneScene(2, ["It's the night of the cup final", "As the manager of the home side\nit is your duty to lead your team to victory", "But with kick-off approaching...", "...you only have 10 seconds to prepare\na speech"], new GameScene()));
+		}
 	}
 
 	public override function update() : Void {

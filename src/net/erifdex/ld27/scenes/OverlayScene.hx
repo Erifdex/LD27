@@ -9,11 +9,13 @@ class OverlayScene extends Scene {
 
 	public var fadeScreen : Image;
 	public var fade : Int;
+	public var fadeSpeed : Float;	
 	private var nextScene : Scene;
 
 	public function new() {
 		super();
 		fade = 0;
+		fadeSpeed = 0.1;
 	}
 
 	public override function begin() : Void {
@@ -25,7 +27,7 @@ class OverlayScene extends Scene {
 	}
 
 	public override function update() : Void {
-		fadeScreen.alpha += (fade - fadeScreen.alpha) * 0.1;
+		fadeScreen.alpha += (fade - fadeScreen.alpha) * fadeSpeed;
 		if(this.nextScene != null) {
 			if(fadeScreen.alpha > 0.95) {
 				HXP.scene = nextScene;
